@@ -1,0 +1,52 @@
+
+print('Input 3 variables and leave one as an unknown')
+
+vf2 = input('Input final velocity!(if unknown write none)')
+if(vf2 == 'none'):
+ vf2 = 'none'
+else:
+    vf = float(vf2)
+ 
+vi2 = input('Input initial velocity!(if unknown write none)')
+if(vi2 == 'none'):
+  vi2 = 'none'
+else:
+    vi = float(vi2)
+
+t2 = input('Input time!(if unknown write none)')
+if(t2 == 'none'):
+    t2 = 'none'
+else:
+    t = float(t2)
+ 
+a2 = input('Input acceleration!(if unknown write none)')
+if(a2 == 'none'):
+       a2 = 'none'
+else:
+    a = float(a2)
+    
+if(a2 == 'none'):
+    ans = (vf - vi)/t
+    a = ans
+    print("Acceleration is: ")
+    print(a)
+
+if(t2 == 'none'):
+    ans = (vf - vi) / a
+    t = ans
+    print("Time is: ")
+    print(t)
+
+if(vi2 == 'none'):
+    ans = vf - a * t
+    vi = ans
+    print("Initial Velocity is: ")
+    print(vi)
+
+        
+if(vf2 == 'none'):
+    ans = vi + a * t
+    vf = ans
+    print("Final Velocity is: ")
+    print(vf)
+
